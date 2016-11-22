@@ -10,7 +10,7 @@ describe 'storm::nimbus' do
 
   it { should contain_concat__fragment(
     'nimbus'
-    ).with_content(/nimbus.host: "localhost"/)
+    ).with_content(/nimbus.seeds: ["localhost"]/)
   }
 
   context 'manage service' do

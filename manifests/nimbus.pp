@@ -13,7 +13,7 @@ class storm::nimbus(
   $enable                    = true,
   $force_provider            = undef,
   $mem                       = '1024m',
-  $host                      = 'localhost',
+  $seeds                     = ['localhost'],
   $thrift_port               = 6627,
   $childopts                 = '-Xmx1024m',
   $task_timeout_secs         = 30,
